@@ -7,3 +7,6 @@
 [submodule "gateway"]
 	path = gateway
 	url = git@github.com:PolyHx/CS-Gateway
+[submodule "mail"]
+	path = mail
+	url = git@github.com:PolyHx/mail

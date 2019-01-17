@@ -1,12 +1,5 @@
 version: '3'
 services:
-  api:
-    build: api/
-    volumes:
-      - ./sts/keys/public.pem:/keys/public.pem
-      - ./gcp:/gcp
-    network_mode: host
-    env_file: api/.env
   gateway:
     build: gateway/
     volumes:

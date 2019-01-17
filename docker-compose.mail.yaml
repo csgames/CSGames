@@ -19,9 +19,3 @@ services:
       - ./sts/keys:/keys
     network_mode: host
     env_file: sts/.env
-  mail:
-    build: mail/
-    volumes:
-      - ./sts/keys/public.pem:/keys/public.pem
-    network_mode: host
-    env_file: mail/.env
