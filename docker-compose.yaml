@@ -3,25 +3,40 @@ services:
   api:
     build: api/
     volumes:
-      - ./sts/keys/public.pem:/keys/public.pem
+      - ./sts/keys:/keys
       - ./gcp:/gcp
-    network_mode: host
+    ports:
+      - "8080:8080"
     env_file: api/.env
+    networks:
+      - app
   gateway:
     build: gateway/
     volumes:
-      - ./gateway/app/proxy-config.json:/config/proxy-config.json
-    network_mode: host
+      - ./gateway/app:/config
+    ports:
+      - "8000:8000"
     env_file: gateway/.env
+    networks:
+      - app
   sts:
     build: sts/
     volumes:
       - ./sts/keys:/keys
-    network_mode: host
+    ports:
+      - "5555:5555"
     env_file: sts/.env
+    networks:
+      - app
   mail:
     build: mail/
     volumes:
-      - ./sts/keys/public.pem:/keys/public.pem
-    network_mode: host
+      - ./sts/keys:/keys
+    ports:
+      - "8090:8090"
     env_file: mail/.env
+    networks:
+      - app
+networks:
+  app:
+    driver: bridge

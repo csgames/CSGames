@@ -5,17 +5,14 @@ services:
     volumes:
       - ./sts/keys/public.pem:/keys/public.pem
       - ./gcp:/gcp
-    network_mode: host
     env_file: api/.env
   gateway:
     build: gateway/
     volumes:
       - ./gateway/app/proxy-config.json:/config/proxy-config.json
-    network_mode: host
     env_file: gateway/.env
   sts:
     build: sts/
     volumes:
       - ./sts/keys:/keys
-    network_mode: host
     env_file: sts/.env
