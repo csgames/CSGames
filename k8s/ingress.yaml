@@ -22,3 +22,10 @@ spec:
         backend:
           serviceName: csgames-sts-staging-backend
           servicePort: 5555
+  - host: mail.csgames.polyhx.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: csgames-mail-staging-backend
+          servicePort: 8090
