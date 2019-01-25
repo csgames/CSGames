@@ -36,6 +36,15 @@ data:
 
       [[acme.domains]]
         main = "api.csgames.polyhx.io"
+
+      [[acme.domains]]
+        main = "management.csgames.polyhx.io"
+
+      [[acme.domains]]
+        main = "identity.csgames.polyhx.io"
+
+      [[acme.domains]]
+        main = "mail.csgames.polyhx.io"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

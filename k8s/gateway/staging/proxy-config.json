@@ -1,0 +1,10 @@
+{
+    "path": "/v1", 
+    "target": "https://management.csgames.polyhx.io",
+    "router": [
+        { "path_starts_with" : "/management", "redirect" : "https://management.csgames.polyhx.io", "path_without": "/v1/management" },
+        { "path_starts_with" : "/identity", "redirect" : "https://identity.csgames.polyhx.io", "path_without": "/v1/identity" },
+        { "path_starts_with" : "/mail", "redirect" : "https://mail.csgames.polyhx.io", "path_without": "/v1/mail" }
+    ],
+    "logLevel": "info"
+}

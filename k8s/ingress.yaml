@@ -8,10 +8,31 @@ metadata:
     traefik.frontend.priority: "1"
 spec:
   rules:
-  - host: api.csgames.polyhx.io
+  - host: management.csgames.polyhx.io
     http:
       paths:
       - path: /
         backend:
           serviceName: csgames-api-staging-backend
           servicePort: 8080
+  - host: identity.csgames.polyhx.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: csgames-sts-staging-backend
+          servicePort: 5555
+  - host: mail.csgames.polyhx.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: csgames-mail-staging-backend
+          servicePort: 8090
+  - host: api.csgames.polyhx.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: csgames-gateway-staging-backend
+          servicePort: 8000
