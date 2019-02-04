@@ -118,6 +118,21 @@ spec:
             configMapKeyRef:
               name: api-configmap-staging
               key: PORT
+        - name: REDIS_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: api-configmap-staging
+              key: REDIS_HOST
+        - name: REDIS_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: api-configmap-staging
+              key: REDIS_PASSWORD
+        - name: REDIS_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: api-configmap-staging
+              key: REDIS_PORT
         - name: STS_CLIENT_ID
           valueFrom:
             configMapKeyRef:
