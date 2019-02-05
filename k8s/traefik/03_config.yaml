@@ -45,6 +45,9 @@ data:
 
       [[acme.domains]]
         main = "mail.csgames.polyhx.io"
+
+      [[acme.domains]]
+        main = "dashboard.csgames.polyhx.io"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

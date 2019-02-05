@@ -36,3 +36,10 @@ spec:
         backend:
           serviceName: csgames-gateway-staging-backend
           servicePort: 8000
+  - host: dashboard.csgames.polyhx.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: csgames-dashboard-staging-backend
+          servicePort: 4200
