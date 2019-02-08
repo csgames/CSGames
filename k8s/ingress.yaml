@@ -43,3 +43,10 @@ spec:
         backend:
           serviceName: csgames-dashboard-staging-backend
           servicePort: 4200
+  - host: api.csgames.org
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: csgames-gateway-prod-backend
+          servicePort: 8000

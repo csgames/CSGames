@@ -48,6 +48,12 @@ data:
 
       [[acme.domains]]
         main = "dashboard.csgames.polyhx.io"
+
+      [[acme.domains]]
+        main = "dashboard.csgames.org"
+
+      [[acme.domains]]
+        main = "api.csgames.org"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

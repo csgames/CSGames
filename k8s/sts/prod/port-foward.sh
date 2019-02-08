@@ -1,0 +1,1 @@
+kubectl port-forward deployment/csgames-sts-prod-master 5555:5555 
