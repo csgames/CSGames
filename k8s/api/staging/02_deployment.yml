@@ -81,6 +81,16 @@ spec:
             configMapKeyRef:
               name: api-configmap-staging
               key: JWT_PUBLIC_KEY
+        - name: JWT_AUDIENCES
+          valueFrom:
+            configMapKeyRef:
+              name: api-configmap-staging
+              key: JWT_AUDIENCES
+        - name: JWT_ISSUER
+          valueFrom:
+            configMapKeyRef:
+              name: api-configmap-staging
+              key: JWT_ISSUER
         - name: MESSAGING_KEY_FILE_PATH
           valueFrom:
             configMapKeyRef:
