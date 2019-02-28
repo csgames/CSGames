@@ -46,6 +46,11 @@ spec:
             configMapKeyRef:
               name: gateway-configmap-staging
               key: GATEWAY_BASE_PATH
+        - name: IS_HTTPS
+          valueFrom:
+            configMapKeyRef:
+              name: gateway-configmap-staging
+              key: IS_HTTPS
         - name: PROXY_CONFIG_PATH
           valueFrom:
             configMapKeyRef:

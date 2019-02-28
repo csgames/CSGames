@@ -8,8 +8,12 @@ metadata:
     tier: backend
 spec:
   ports:
-  - port: 8080
+  - name: csgames-api-prod-backend
     targetPort: 8080
+    port: 8080
+  - name: csgames-api-ws-prod-backend
+    targetPort: 8081
+    port: 8081
   selector:
     app: csgames-api-prod
     role: master
