@@ -33,4 +33,4 @@ spec:
         - --logLevel=INFO
         env:
         - name: DEPLOYMENT_VAR
-          value: abcdef
+          value: abcdefe
