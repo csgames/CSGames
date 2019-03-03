@@ -24,6 +24,8 @@ data:
     [api]
       entryPoint = "traefik"
       dashboard = true
+    [ping]
+      entryPoint = "http"
     [acme]
       email = "dufresne_julien@hotmail.ca"
       storage = "/etc/traefik/acme.json"
