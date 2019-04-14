@@ -50,3 +50,10 @@ spec:
         backend:
           serviceName: csgames-gateway-prod-backend
           servicePort: 8000
+  - host: dashboard.csgames.org
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: csgames-dashboard-prod-backend
+          servicePort: 4200

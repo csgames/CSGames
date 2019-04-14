@@ -40,15 +40,6 @@ data:
         main = "api.csgames.polyhx.io"
 
       [[acme.domains]]
-        main = "management.csgames.polyhx.io"
-
-      [[acme.domains]]
-        main = "identity.csgames.polyhx.io"
-
-      [[acme.domains]]
-        main = "mail.csgames.polyhx.io"
-
-      [[acme.domains]]
         main = "dashboard.csgames.polyhx.io"
 
       [[acme.domains]]
