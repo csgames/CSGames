@@ -1,12 +1,12 @@
 [submodule "sts"]
 	path = sts
-	url = git@github.com:PolyHx/CSGamesAuthService
+	url = ../CSGamesAuthService
 [submodule "api"]
 	path = api
-	url = git@github.com:PolyHx/CSGames-Api
+	url = ../CSGames-Api
 [submodule "gateway"]
 	path = gateway
-	url = git@github.com:PolyHx/CS-Gateway
+	url = ../CS-Gateway
 [submodule "mail"]
 	path = mail
-	url = git@github.com:PolyHx/mail
+	url = ../mail
