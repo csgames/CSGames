@@ -1,12 +1,12 @@
 [submodule "sts"]
 	path = sts
-	url = ../CSGamesAuthService
+	url = git@github.com:CSGames/CSGamesAuthService
 [submodule "api"]
 	path = api
-	url = ../CSGames-Api
+	url = git@github.com:CSGames/CSGames-Api
 [submodule "gateway"]
 	path = gateway
-	url = ../CS-Gateway
+	url = git@github.com:CSGames/CS-Gateway
 [submodule "mail"]
 	path = mail
-	url = ../mail
+	url = git@github.com:CSGames/mail
